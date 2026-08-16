@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Algorithms & Data Structures | Shawn Cathey</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <span class="badge bg-success fs-6"> ENHANCEMENT TWO </span>
+
+        <h1 class="display-4 fw-bold mt-3">Algorithms & Data Structures</h1>
+
+        <p class="lead">Algorithm Design and Data Structure Enhancements</p>
+      </div>
+
+  <div class="final-project-card mt-4">
+    
+  <div class="row align-items-center g-5">
+
+  
+    <div class="col-lg-6">
+      <h2>Enhancement Overview</h2>
+
+      <p>
+       This enhancement focused on improving the functionality of the Grazioso Salvare Animal Rescue Dashboard by adding a search feature without changing the existing rescue-type filtering system. The goal was to allow users to search for animals by name or breed while preserving the original workflow and ensuring that the table, chart, map, and status message all remained synchronized.
+      </p>
+    </div>
+   
+
+     <div class="col-md-6 text-center">
+      <a href="../images/enhanced_dashboard.png" target="_blank">
+        <img
+          src="../images/enhanced_dashboard.png"
+          class="gallery-img"
+          alt="Original Dashboard View 2"
+        />
+      </a>
+    </div>
+
+
+  </div>
+</div>
+ <div class="portfolio-card mt-4">
+        <h3>Skills Demonstrated</h3>
+
+        <ul>
+          <li>Software Architecture</li>
+          <li>Object-Oriented Design</li>
+          <li>Code Refactoring</li>
+          <li>Maintainability</li>
+          <li>Professional Documentation</li>
+        </ul>
+      </div>
+<div class="portfolio-card mt-4">
+        <h3>Artifact Description</h3>
+
+
+          <p>
+           The artifact selected for this enhancement is the Grazioso Salvare Animal Rescue Dashboard project which I originally worked on in CS 340: Client/Server Development. The dashboard already had a working interface, a MongoDB database, and a CRUD module. This gave me the material needed to review the application and determine where meaningful improvements could be made based on the capstone criteria. For this enhancement, I focused on improving the application's search capabilities by allowing users to search for animals by name or breed while preserving the existing rescue-type filtering system.
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="portfolio-card mt-4">
+        <h3>Justification for Inclusion</h3>
+
+        <p>
+          I selected this artifact because it gave me the opportunity to improve an existing application instead of creating something completely new. Rather than replacing the rescue-type filtering system, I added a search feature that worked alongside the existing filters. This required understanding how data moved from MongoDB into the Pandas DataFrames and how Dash callbacks updated the table, chart, map, and status message. I think this enhancement demonstrates the type of problem solving that developers encounter when they need to add new functionality without disrupting software that already works.
+        </p>
+      </div>
+
+      <div class="portfolio-card mt-4">
+        <h3>Reflection</h3>
+
+        <p>
+          The algorithms and data structures enhancement taught me that adding a new feature isn't always the difficult part. The part that actually took the most time was understanding how data moved through the application. The dashboard retrieves records from MongoDB, organizes them inside Pandas DataFrames, and then uses that data to update the table, charts, and map. At first I found it difficult to follow that process because several parts of the application were working together. Once I understood how everything was connected, adding the search feature became much easier because I knew where it belonged instead of trying to force it into the application.
+        </p>
+
+        <p>
+          Another challenge was getting the search feature and the rescue-type filters to work together. A few times I would get one working only to realize I had accidentally broken the other. I went back through the callbacks several times until both filters worked together without overriding each other. After that I spent time testing searches by name, breed, partial matches, blank searches, and rescue-type filters to make sure everything behaved as expected. I also checked that the table, chart, map, and status message all stayed synchronized after each search.
+        </p>
+
+        <p>
+          Looking back, I think this enhancement taught me more about understanding an existing application than it did about writing the search algorithm itself. Sometimes the hardest part isn't building a new feature. It's understanding how everything already fits together so you can improve the application without disrupting the functionality that's already there.
+        </p>
+      </div>
+
+     
+
+      <div class="portfolio-card mt-4">
+        <h3>Resources</h3>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a
+            href="https://github.com/zencode4/CS-499-Computer-Science-Capstone/tree/module5"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="bi bi-github" style="color: white;"></i>
+
+            Enhancement Two Source Code
+          </a>
+
+          <a
+            href="../docs/Enhancement-Two-Narrative.docx"
+            target="_blank"
+            class="btn btn-success"
+          >
+            <i class="bi bi-file-earmark-word" style="color: white;"></i>
+
+             Enhancement Two Narrative (.docx)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

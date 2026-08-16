@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Databases | Shawn Cathey</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <span class="badge bg-warning text-dark fs-6"> ENHANCEMENT THREE </span>
+
+        <h1 class="display-4 fw-bold mt-3">Databases</h1>
+
+        <p class="lead">
+          Database Design, Query Optimization, and CRUD Enhancements
+        </p>
+      </div>
+
+  <div class="final-project-card mt-4">
+    
+  <div class="row align-items-center g-5">
+
+  
+    <div class="col-lg-6">
+      <h2>Enhancement Overview</h2>
+
+      <p>
+        This enhancement focused on improving how the Grazioso Salvare Animal Rescue Dashboard interacted with MongoDB instead of changing the dashboard itself. The goal was to improve database efficiency by expanding the CRUD module, moving the search functionality into the database layer, and allowing MongoDB to perform the filtering before returning the results while preserving the application's existing functionality.
+      </p>
+    </div>
+  
+
+     <div class="col-md-6 text-center">
+      <a href="../images/rescue_type_filter.png" target="_blank">
+        <img
+          src="../images/rescue_type_filter.png"
+          class="gallery-img"
+          alt="Original Dashboard View 2"
+        />
+      </a>
+    </div>
+
+
+  </div>
+</div>
+    <div class="portfolio-card mt-4">
+        <h3>Skills Demonstrated</h3>
+
+        <ul>
+          <li>Software Architecture</li>
+          <li>Object-Oriented Design</li>
+          <li>Code Refactoring</li>
+          <li>Maintainability</li>
+          <li>Professional Documentation</li>
+        </ul>
+      </div>
+
+<div class="portfolio-card mt-4">
+        <h3>Artifact Description</h3>
+
+
+          <p>
+            The artifact selected for this enhancement is the Grazioso Salvare Animal Rescue Dashboard project which I originally worked on in CS 340: Client/Server Development. The dashboard already had a working interface, a MongoDB database, and a CRUD module. This gave me the material needed to review the application and determine where meaningful improvements could be made based on the capstone criteria. For this enhancement, I focused on improving the database functionality by expanding the CRUD module, adding input validation, and moving the search functionality into MongoDB so matching records could be retrieved directly from the database.
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="portfolio-card mt-4">
+        <h3>Justification for Inclusion</h3>
+
+        <p>
+          I selected this artifact because it allowed me to improve the database layer without changing how the application behaved from the user's perspective. Instead of retrieving a larger dataset and filtering it afterward inside the dashboard, I expanded the CRUD module so MongoDB handled the search before returning the results. This enhancement also demonstrated how separating the database logic from the user interface makes the application easier to maintain and more closely reflects how professional software is organized. I think this project was the strongest choice because it combines database development, software engineering, and user interface design into one application while demonstrating meaningful improvements instead of creating something completely new.
+        </p>
+      </div>
+
+      <div class="portfolio-card mt-4">
+        <h3>Reflection</h3>
+
+        <p>
+         The database enhancement helped me understand database design a lot better. Before this enhancement, the application retrieved a larger dataset and then performed the search afterward inside the dashboard. I changed that by expanding the CRUD module so MongoDB handled the search before the results were returned. This meant adding input validation, supporting additional MongoDB queries, and using the $regex operator so users could perform case-insensitive searches by name or breed. Once the search was moved into the database layer, the dashboard only had to display the records that MongoDB returned while the CRUD module handled building and running the queries.
+        </p>
+
+        <p>
+          One of the more challenging parts of this enhancement was making sure the new database queries continued to work correctly with the rescue-type filters that were already there. It wasn't enough to see if the search worked by itself. I had to test different combinations of rescue filters, search terms, partial matches, and searches that returned no results while making sure the table, chart, map, and status message all stayed synchronized. That process reminded me that changing one part of an application usually means checking how it affects everything else before considering the enhancement complete.
+        </p>
+
+        <p>
+          Looking back, I think this enhancement reinforced something I learned throughout the capstone. It is possible to improve an application without completely rebuilding it. Instead of changing how the dashboard looked or behaved, I focused on improving the database layer so it handled more of the work. That experience gave me a better understanding of how separating responsibilities within an application can improve both maintainability and overall software quality.
+        </p>
+      </div>
+
+  
+      <div class="portfolio-card mt-4">
+        <h3>Resources</h3>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a
+            href="https://github.com/zencode4/CS-499-Computer-Science-Capstone/tree/module5"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="bi bi-github" style="color: white;"></i>
+
+            Enhancement Three Source Code
+          </a>
+
+          <a
+            href="../docs/Enhancement-Three-Narrative.docx"
+            target="_blank"
+            class="btn btn-success"
+          >
+            <i class="bi bi-file-earmark-word" style="color: white;"></i>
+
+             Enhancement Three Narrative (.docx)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

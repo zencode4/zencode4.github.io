@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Professional Self-Assessment | Shawn Cathey</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary fs-6">
+          PROFESSIONAL SELF-ASSESSMENT
+        </span>
+
+        <h1 class="display-4 fw-bold mt-3">Professional Self-Assessment</h1>
+
+        <p class="lead">
+          Reflection on Academic Growth, Technical Development, and Program
+          Outcomes
+        </p>
+      </div>
+
+      <!-- Self-Assessment -->
+
+      <div class="portfolio-card">
+        <h2>Professional Self-Assessment</h2>
+
+        <br />
+        <h3>Introduction</h3>
+        When I began the Computer Science program at SNHU, I had the mindset of
+        getting through each class and hopefully I would learn along the way.
+        However, because the courses were project based, learning was easier
+        than I thought because I actually got to work with the ideas rather than
+        just being tested on them. One class would introduce a concept, then
+        another would build on it, and this was helpful because it allowed me to
+        have the confidence to build out the Capstone project with the material
+        that I had previously learned. For my capstone I chose the Grazioso
+        Salvare Animal Rescue Dashboard project which I originally worked on in
+        CS 340: Client/Server Development. The dashboard already had a working
+        interface, a MongoDB database, and a CRUD module. This gave me the
+        material needed to browse through and decide if it made sense to improve
+        based on the criteria that we were tasked with. I also think this is
+        much closer to what happens in a real software job as most of the time
+        you're working on software that somebody already wrote. Each enhancement
+        was designed with a different goal in mind. The first was mostly about
+        making the code easier to maintain and improving the overall
+        organization. The second added search functionality so users could
+        actually find specific animals without scrolling through the table. Then
+        the third moved that search into MongoDB so the database handled more of
+        the work itself instead of the dashboard. The application worked without
+        the enhancements and so none of the enhancements were intended to
+        completely change the application, rather together they made it cleaner,
+        more efficient, and easier to build on in the future. As I near
+        completion of this course, I can look back over the whole program, as
+        well as my time in community college and see how each course added
+        something different. In my earlier classes, I was just beginning to get
+        comfortable with programming and problem-solving, but now as the program
+        nears completion I’m working on concepts such as software engineering,
+        databases, networking, operating systems, security, all which have been
+        layered in over time throughout my course work, and all I would have
+        considered very advanced when I first began, so I’m proud that I was
+        able to get familiar with these topics. Also, I feel like now that I’ve
+        gotten to the capstone I can work on projects that have multiple
+        concepts working simultaneously and I think this is probably the biggest
+        difference from when I first started.
+        <br />
+        <br />
+        <h3>Collaboration and Communication</h3>
+        One thing I quickly noticed with the CS program was that writing the
+        code is really only part of the process. Getting my programs to work is
+        one thing, but as the courses become more advanced, understanding why we
+        must make certain decisions becomes just as important. Every course's
+        milestone or assignment had some kind of documentation such as a
+        narrative, design document, discussion post, or reflection and
+        understanding and being able to communicate with others on these ideas
+        made the concepts more clear, and I now feel more confident in
+        explaining technical ideas. With this Capstone project, I feel like the
+        initial code review was very helpful to begin the process. Having to go
+        through code of a previously built project and find areas where there
+        could be room for improvement, vulnerabilities, or errors in overall
+        efficiency was difficult because the program worked. So, instead of
+        purely just asking myself if it worked, I started asking whether it was
+        first just organized well, whether something could be simplified at all,
+        and whether future changes would be easier or harder because of the way
+        I wrote my code. Once I had those questions answered, the actual
+        perceived difficulty of the enhancements went down a lot because I had
+        the confidence to know that the changes I make to the code are actually
+        doing something purposeful and fit into the criteria we were aiming to
+        achieve. Another thing regarding communication was in my mobile
+        application course, as well as for this project I began to consider how
+        the application communicates with the person using it. Ideas such as
+        having messages to the user became evident in the software engineering
+        enhancement portion. Its small feature, but I think enhancements like
+        this can make an application easier to use because the software can tell
+        a user what's happening or what's needed instead of making them figure
+        something out on their own.
+        <br />
+        <br />
+        <h3>Software Engineering</h3>
+
+        The software engineering enhancement shows how software quality can go
+        beyond just producing working code. The dashboard of the application was
+        functional to begin with but after I reviewed the code I started to
+        notice areas that I could possibly improve. Things I was looking for was
+        whether there was any room for organization, future maintainability, and
+        readability without changing its existing behavior. What I then did was
+        reorganize parts of the dashboard into clearly defined interface
+        sections, utilize reusable styling constants, replace repeated
+        formatting throughout the application, and make the overall layout
+        become more consistent and easier to maintain in the future. This leg of
+        the enhancements helped me understand the importance of separating
+        concerns, such as having the database operations remain isolated within
+        the CRUD module while Dash callbacks continue to manage the user
+        interface. Because I was able to preserve this separation while
+        improving the application's organization reflected software engineering
+        practices which are needed within professional development environments.
+        Instead of rebuilding existing functionality, this enhancement made me
+        work on improving the quality of the codebase itself. This enhancement
+        also reinforced the idea of maintainability in software. Doing things
+        like centralizing colors, spacing, fonts, and other interface elements
+        into shared style constants can make future modifications significantly
+        easier instead of having duplicated code. Also, testing the updated
+        interface showed me how small changes can have unintentional side
+        effects, such as the alternating row colors and the existing column
+        callback. This helped me better understand the importance of testing
+        enhancements within the context of the criteria and application rather
+        than evaluating individual features in isolation.
+        <br />
+        <br />
+        <h3>Algorithms and Data Structures</h3>
+
+        The algorithms and data structures enhancement was focused on improving
+        the dashboard without changing how it functions. I added a search
+        feature that works in addition to the existing filters instead of
+        replacing the existing rescue-type filtering system. This lets users
+        intuitively search by name or breed while the rescue filter is active
+        and allows for both filters to work together instead of interfering with
+        one another. This enhancement taught me a lot about how data moves
+        through an application. In this instance MongoDB holds the records, the
+        dashboard pulls them, drops them into Pandas DataFrames, then uses that
+        to update the table, charts, and map. At first, this process seemed a
+        bit hard to follow because it had a few moving pieces, all depending on
+        each other. Once I went over it a few times, I saw how it connected and
+        the search logic concepts came together. I also spent quite a bit of
+        time testing different situations after the search was finished. I
+        wanted to make sure searches by name, breed, partial matches, blank
+        searches, and rescue-type filters all worked together the way they were
+        supposed to. Every time the data changed, I also checked that the table,
+        chart, map, and status message stayed synchronized. The search itself
+        wasn't especially complicated, but fitting it into an application that
+        already worked taught me more than writing the algorithm alone would
+        have.
+        <br />
+        <br />
+        <h3>Databases</h3>
+        The database enhancement built on the work I had already done by
+        improving how the dashboard interacted with MongoDB instead of changing
+        the dashboard itself. Before this enhancement, the application would
+        retrieve a larger dataset and then perform the search afterward inside
+        the dashboard. I changed that by expanding the CRUD module so MongoDB
+        handled the search before the results were returned. That reduced some
+        of the extra work the dashboard was doing and also kept the database
+        logic in one place. Working through this enhancement also helped me
+        understand database design a lot better. Expanding the CRUD module meant
+        adding input validation, supporting additional MongoDB queries, and
+        using the $regex operator so users could perform case-insensitive
+        searches by name or breed. Once the search was moved into the database
+        layer, the dashboard only had to display the records that MongoDB
+        returned while the CRUD module handled building and running the queries.
+        I think that made the code easier to follow and also made future changes
+        easier because the database work stayed inside the CRUD module. The
+        biggest challenge was making sure the new database queries still worked
+        correctly with the rescue-type filters that were already there. It
+        wasn't enough to see if the search worked by itself. I had to test
+        different combinations of rescue filters, search terms, partial matches,
+        and searches that returned no results. At the same time I kept checking
+        that the table, chart, map, and status message all stayed synchronized.
+        That ended up reminding me that changing one part of an application
+        usually means checking how it affects everything else before you're
+        finished.
+        <br />
+        <br />
+        <h3>Security</h3>
+
+        Security wasn't the main focus of this capstone, but I had to think
+        about it anyway while working through the enhancements. Earlier on, I
+        basically thought of security as keeping systems safe from attacks or
+        people who shouldn't have access but the more I learned, the more I
+        realized how there are many aspects to security and many aspects of it
+        can be found within code. One area that developers deal with is the
+        handling of data responsibly, such as validating what users put in. One
+        place where I found this concern present itself was in the database
+        enhancement. As I expanded the CRUD module, I added input validation
+        before building the MongoDB queries. This helped make sure the
+        application was only working with appropriate values before sending
+        anything to the database. I also kept the database logic inside the CRUD
+        module instead of spreading it throughout the dashboard which is
+        important to note. Besides making the code easier to maintain, it also
+        meant there was one place responsible for interacting with the database
+        instead of several. Looking back, one of the biggest concepts I took
+        from learning about security is that it isn't something you do at the
+        end, it's part of how you write software from the start. On a basic
+        level, having proper validation of user input, or keeping
+        responsibilities separated when you organize the code are things that
+        should be kept in mind from the start. Also, testing different
+        situations before you call a feature complete would be another habit
+        that you should also include. Basic security can be thought of as small
+        habits, but they add up to software you can actually trust. As far as
+        security goes there's still a lot I don't know, but I definitely
+        approach projects differently now than when I started this program.
+        <br />
+        <br />
+        <h3>Professional Growth</h3>
+        Looking back over the program now, I can see how each course built on
+        the one before it. At the time I was mostly focused on learning whatever
+        that class happened to be teaching, but it all came together during the
+        capstone. In my earlier courses I was introduced to programming
+        concepts, databases, networking, and software design, but my later
+        course work has expected me to start putting more of these concepts
+        together into more complex projects. This capstone was the first time in
+        my course work where I had to step back, look at something I had
+        previously worked on, and think about how I could improve on the code.
+        Working through the three enhancements also changed the way I think
+        about software development. Before this project I probably would have
+        started over if I wanted to add new features or improve something, or at
+        least try to rewrite a lot of it completely thinking that I must have a
+        monumental task ahead of me. After completing this project I think a bit
+        differently. I think if you can understand the code that's already
+        there, figure out how everything works together, and then ask yourself
+        how you can better make things more efficient or if you can perhaps
+        build on top of it without breaking what already works, then you can get
+        a lot done with the structure you already have. This is what I tried to
+        do throughout all three enhancements. Each one improved a different part
+        of the application while keeping the original dashboard intact. One of
+        the most important concepts I learned from the capstone, was that just
+        writing more code in itself isn't that valuable,but learning how to read
+        existing code, understand how the different pieces work together, and
+        make improvements without creating new problems somewhere else can be
+        invaluable. I think that the artifacts throughout this ePortfolio show
+        this progression of how my approach to programming has changed since I
+        started the program. I plan on continuing to learn as much as I can
+        about computer science going forward, but I feel a lot more confident
+        working with larger projects than I did when I first began.
+        <br />
+        <br />
+        <h3>Conclusion</h3>
+
+        As I near completion of the Bachelor of Science in Computer Science
+        program at SNHU, I feel like the program has strengthened both my
+        technical knowledge and my confidence as a software developer. The
+        artifacts in this ePortfolio aren't just my completed coursework, I feel
+        as if they show a progression which has taken several years to achieve.
+        I began with first learning individual programming concepts, then over
+        time was able to apply those concepts inside a full software system.
+        Each enhancement of this Capstone took time, analysis, planning,
+        implementation, testing, and reflection. It mimicked what a real world
+        project might entail because it was taking previously written code, and
+        making adjustments to it instead of just rewriting the entire thing on
+        my own, so I had to work within the constraints of enhancing something
+        rather than just developing it from the ground up. The Grazioso Salvare
+        Animal Rescue Dashboard turned out to be a great project choice for
+        showcasing this growth. It had all the needed components to work with
+        like the UI, algorithms, database management, and overall software
+        engineering aspect. Through the enhancements I made, the app became more
+        organized, functional, efficient, and yet it still does what it was
+        intended to do. These experiences taught many things but in the end I
+        feel the confidence that I can now write more efficient code, design
+        solutions, debug and test the changes I implemented, and also be able to
+        go back and improve upon things that already exist like we did for this
+        Capstone. Going forward, I’m excited to keep building on what this
+        program gave me, stay curious, keep learning. I feel as if I’ve now been
+        given a solid technical base to work with and I feel confident that I
+        can be a valuable contribution to a software engineering team.
+      </div>
+
+      <!-- Resources -->
+
+      <div class="portfolio-card mt-4">
+        <h3>Resources</h3>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a
+            href="../docs/Professional-Self-Assessment.docx"
+            target="_blank"
+            class="btn btn-success"
+          >
+            <i class="bi bi-file-earmark-word text-white"></i>
+
+            Professional Self-Assessment (.docx)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

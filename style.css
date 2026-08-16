@@ -1,0 +1,261 @@
+/* ===========================================
+   Global
+=========================================== */
+
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-hover: #273549;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --primary: #3b82f6;
+  --border: #334155;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ===========================================
+   Navbar
+=========================================== */
+
+.navbar {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  color: var(--muted) !important;
+  transition: 0.25s;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+/* ===========================================
+   Hero
+=========================================== */
+
+.hero {
+  background: linear-gradient(135deg, #111827, #1e3a8a);
+
+  padding: 60px 20px 35px;
+}
+
+.hero h1 {
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  color: #dbeafe;
+
+  margin-bottom: 25px;
+}
+
+.hero p {
+  color: #cbd5e1;
+}
+
+.tech-badges {
+  margin-top: 30px;
+}
+
+.tech-badges .badge {
+  margin: 6px;
+
+  font-size: 0.9rem;
+
+  padding: 0.8rem 1rem;
+}
+
+/* ===========================================
+   Portfolio Cards
+=========================================== */
+
+.portfolio-card {
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 16px;
+
+  padding: 35px;
+
+  height: 100%;
+
+  transition: 0.25s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+
+  background: var(--surface-hover);
+
+  border-color: var(--primary);
+}
+
+.portfolio-card i {
+  color: var(--primary);
+
+  margin-bottom: 20px;
+}
+
+.portfolio-card h3 {
+  margin-bottom: 15px;
+
+  font-size: 1.3rem;
+}
+
+.portfolio-card p {
+  color: var(--muted);
+
+  min-height: 85px;
+}
+
+/* ===========================================
+   Buttons
+=========================================== */
+
+.btn {
+  border-radius: 10px;
+
+  padding: 10px 22px;
+}
+
+.btn-primary {
+  background: var(--primary);
+
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary);
+
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary);
+
+  color: white;
+}
+
+/* ===========================================
+   Footer
+=========================================== */
+
+footer {
+  margin-top: 80px;
+
+  background: #111827;
+
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  color: var(--muted);
+}
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-card {
+    padding: 25px;
+  }
+}
+/* ===========================================
+   Final Project Showcase
+=========================================== */
+
+.final-project-card {
+  background: #1e293b;
+
+  border: 1px solid #334155;
+
+  border-radius: 18px;
+
+  padding: 40px;
+
+  margin-top: 40px;
+}
+
+.final-project-card img {
+  border-radius: 12px;
+
+  border: 2px solid #334155;
+}
+
+.final-project-card h2 {
+  font-weight: 700;
+}
+
+.final-project-card p {
+  color: #cbd5e1;
+}
+
+.final-project-card .badge {
+  font-size: 0.9rem;
+
+  padding: 0.6rem 0.9rem;
+}
+
+.final-project-card .btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .final-project-card {
+    text-align: center;
+  }
+
+  .final-project-card img {
+    margin-bottom: 30px;
+  }
+}
+.gallery-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}

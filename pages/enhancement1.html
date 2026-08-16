@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Software Design & Engineering | Shawn Cathey</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary fs-6"> ENHANCEMENT ONE </span>
+
+        <h1 class="display-4 fw-bold mt-3">Software Design & Engineering</h1>
+
+        <p class="lead">
+          Software Architecture, Code Refactoring, and Maintainability
+          Improvements
+        </p>
+      </div>
+
+      <div class="final-project-card mt-4">
+
+  <h2>Enhancement Overview</h2>
+
+  <p>
+    This enhancement focused on improving the software architecture,
+    organization, and maintainability of the original Grazioso Salvare
+    Animal Rescue Dashboard. The goal was to improve usability and code
+    quality while preserving the application's existing functionality.
+  </p>
+
+  <div class="row g-4 mt-4">
+
+    <div class="col-md-6 text-center">
+      <a href="../images/original_dashboard.png" target="_blank">
+        <img
+          src="../images/original_dashboard.png"
+          class="gallery-img"
+          alt="Original Dashboard View 1"
+        />
+      </a>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <a href="../images/original_dashboard_2.png" target="_blank">
+        <img
+          src="../images/original_dashboard_2.png"
+          class="gallery-img"
+          alt="Original Dashboard View 2"
+        />
+      </a>
+    </div>
+
+  </div>
+
+  <p class="text-center mt-3 mb-0">
+    Two views of the original Grazioso Salvare
+    Animal Rescue Dashboard and its map feature used as the foundation for the Software Design
+    &amp; Engineering enhancement.
+  </p>
+
+</div>
+        <div class="portfolio-card mt-4">
+          <h3>Skills Demonstrated</h3>
+
+          <ul>
+            <li>Software Architecture</li>
+            <li>Object-Oriented Design</li>
+            <li>Code Refactoring</li>
+            <li>Maintainability</li>
+            <li>Professional Documentation</li>
+          </ul>
+        </div>
+        <div class="portfolio-card mt-4">
+          <h3>Artifact Description</h3>
+
+          <p>
+            The artifact selected for this enhancement is the Grazioso Salvare
+            Animal Rescue Dashboard project which I originally worked on in CS
+            340: Client/Server Development. The dashboard already had a working
+            interface, a MongoDB database, and a CRUD module. This gave me the
+            material needed to browse through the application and decide where
+            it made sense to improve it based on the criteria that we were
+            tasked with. I chose this artifact because it combines a user
+            interface, server-side programming, and database functionality into
+            one application instead of focusing on just one area of computer
+            science.
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio-card mt-4">
+        <h3>Justification for Inclusion</h3>
+
+        <p>
+          I selected this artifact because I think it is much closer to what
+          happens in a real software development environment. Most of the time
+          you're working on software that somebody already wrote instead of
+          constantly starting over. This project gave me the opportunity to
+          review an existing application, determine where improvements could be
+          made, and build on top of the original code without changing what
+          already worked. It also combines software engineering, database
+          integration, and user interface development into one project, making
+          it the strongest artifact to demonstrate growth in this area.
+        </p>
+      </div>
+
+      <div class="portfolio-card mt-4">
+        <h3>Reflection</h3>
+
+        <p>
+          The software engineering enhancement showed how software quality can
+          go beyond just producing working code. The dashboard of the
+          application was functional to begin with, but after I reviewed the
+          code I started to notice areas that I could possibly improve. I was
+          looking for places where I could improve the organization, future
+          maintainability, and readability without changing its existing
+          behavior. What I then did was reorganize parts of the dashboard into
+          clearly defined interface sections, utilize reusable styling
+          constants, replace repeated formatting throughout the application, and
+          make the overall layout more consistent and easier to maintain in the
+          future.
+        </p>
+
+        <p>
+          This enhancement also helped me understand the importance of
+          separating concerns, such as having the database operations remain
+          isolated within the CRUD module while Dash callbacks continue to
+          manage the user interface. Instead of rebuilding existing
+          functionality, I focused on improving the quality of the codebase
+          itself. I also learned that centralizing colors, spacing, fonts, and
+          other interface elements into shared style constants can make future
+          modifications much easier instead of having duplicated code throughout
+          the application. One of the more challenging parts of this enhancement
+          involved the alternating row colors within the data table. Testing the
+          updated interface showed me how small changes can have unintended side
+          effects because the existing callback that highlighted selected
+          columns was interfering with the row styling. Fixing that issue helped
+          me better understand the importance of testing enhancements within the
+          context of the application instead of evaluating individual features
+          in isolation.
+        </p>
+
+        <p>
+          Looking back, I also think the initial code review was one of the most
+          valuable parts of the capstone. Having to go through a previously
+          built project and look for areas where there could be room for
+          improvement made me think differently about the application. Instead
+          of simply asking whether it worked, I started asking whether it was
+          organized well, whether something could be simplified, and whether
+          future changes would be easier or harder because of the way I
+          originally wrote the code. Once I had those questions answered, the
+          enhancements became much easier because I knew the changes I was
+          making actually had a purpose.
+        </p>
+      </div>
+
+      <div class="portfolio-card mt-4">
+        <h3>Resources</h3>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a
+            href="https://github.com/zencode4/CS-499-Computer-Science-Capstone/tree/module2"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="bi bi-github" style="color: white"></i>
+
+            Enhancement One Source Code
+          </a>
+
+          <a
+            href="../docs/Enhancement-One-Narrative.docx"
+            target="_blank"
+            class="btn btn-success"
+          >
+            <i class="bi bi-file-earmark-word" style="color: white"></i>
+
+            Enhancement One Narrative (.docx)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
